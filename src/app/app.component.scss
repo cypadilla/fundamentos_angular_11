@@ -1,0 +1,26 @@
+.box {
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+  background: red;
+}
+.message-error {
+  background: red;
+  color: white;
+  opacity: 0;
+  transition: all linear 0.5s;
+  &.invalid {
+    opacity: 1;
+  }
+}
+
+.line-error {
+  height: 0;
+  border-bottom: 1px solid;
+  &.invalid {
+    border-color: red;
+  }
+  &.valid {
+    border-color: green;
+  }
+}
